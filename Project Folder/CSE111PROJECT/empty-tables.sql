@@ -1,8 +1,17 @@
-delete from region;
-delete from nation;
-delete from supplier;
-delete from customer;
-delete from part;
-delete from partsupp;
-delete from orders;
-delete from lineitem;
+delete from Ability;
+delete from Item;
+delete from Locations;
+delete from Pokemon;
+delete from Trainer;
+delete from TrainerPokemon;
+delete from Resistance;
+
+delete from Moves;
+delete from MoveTable;
+
+delete from Weakness;
+delete from WildEncounter;
+
+
+
+
