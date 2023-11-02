@@ -12,6 +12,7 @@ delete from MoveTable;
 delete from Weakness;
 delete from WildEncounter;
 
+delete from TrainerLocation;
 
 
 

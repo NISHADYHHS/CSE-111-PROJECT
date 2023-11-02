@@ -22,12 +22,12 @@ CREATE TABLE IF NOT EXISTS Pokemon (
     p_description TEXT,
     p_evolution_chain_id INT,
     p_image_url VARCHAR(255),
-    p_moveID INT
+    p_moveID INT,
+    p_LocationID INT
 );
 
-
 CREATE TABLE IF NOT EXISTS TrainerPokemon (
-    p_id INT PRIMARY KEY,
+    p_id INT,
     P_ability INT,
     p_trainerID INT,
     p_move1ID INT,
@@ -38,13 +38,17 @@ CREATE TABLE IF NOT EXISTS TrainerPokemon (
 
 );
 
+CREATE TABLE IF NOT EXISTS TrainerLocation(
+   tl_locationID,
+   tl_trainerID
+
+);
 
 CREATE TABLE IF NOT EXISTS WildEncounter(
     we_locationID INT,
     we_pokemonID INT,
     we_encounterChance DECIMAL(5, 2)
 );
-
 
 CREATE TABLE IF NOT EXISTS Resistance(
    r_id INT PRIMARY KEY,
@@ -67,9 +71,6 @@ CREATE TABLE IF NOT EXISTS Resistance(
    r_dark INT
 );
 
-
-
-
 CREATE TABLE IF NOT EXISTS Weakness (
     w_id INT PRIMARY KEY,
     w_normal INT,
@@ -91,16 +92,12 @@ CREATE TABLE IF NOT EXISTS Weakness (
     w_dark INT
 );
 
-
 CREATE TABLE IF NOT EXISTS Type (
     type_id INT PRIMARY KEY,
     type_name VARCHAR(20) NOT NULL,
     type_weaknessID INT NOT NULL,
     type_resistanceID INT
 );
-
-
-
 
 CREATE TABLE IF NOT EXISTS Item (
     i_id INT PRIMARY KEY,
@@ -110,7 +107,6 @@ CREATE TABLE IF NOT EXISTS Item (
     i_effect TEXT,
     i_image_url VARCHAR(255)
 );
-
 
 CREATE TABLE IF NOT EXISTS Moves (
     m_id INT PRIMARY KEY,
@@ -125,36 +121,21 @@ CREATE TABLE IF NOT EXISTS Moves (
     m_image_url VARCHAR(255)
 );
 
-
-
-
-
-
-
-
-
-
 CREATE TABLE IF NOT EXISTS MoveTable(
    mt_pokemonID INT,
    mt_moveID INT,
    mt_level INT
 );
 
-
-
-
 CREATE TABLE IF NOT EXISTS Trainer (
     t_id INT PRIMARY KEY,
     t_name VARCHAR(50) NOT NULL,
-    t_badge_count INT NOT NULL,
+    t_badge_count INT,
     t_locationID INT,
     t_team_pokemon_count INT,
     t_money INT,
     t_image_url VARCHAR(255)
 );
-
-
-
 
 CREATE TABLE IF NOT EXISTS Locations (
     l_id INT PRIMARY KEY,

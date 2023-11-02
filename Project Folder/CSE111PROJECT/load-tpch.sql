@@ -13,6 +13,7 @@
 .import data/Type.tbl type
 .import data/Weakness.tbl weakness
 .import data/WildEncounter.tbl wildencounter
+.import data/TrainerLocation.tbl trainerlocation
 
 
 
