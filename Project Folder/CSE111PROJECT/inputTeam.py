@@ -62,16 +62,32 @@ def setMoves(moves):
 def getEnemyTrainer(t_id):
     con = sqlite3.connect("pokemon.db")
     cur = con.cursor()
-    cur.execute("SELECT * FROM Trainer INNER JOIN Location ON Location.l_id = Trainer.t_id Inner JOIN TrainerPokemon ON Pokemon.p_trainerID = Trainer.t_id WHERE Trainer.t_id = '" + str(t_id) + "'")
+    cur.execute("SELECT * FROM Trainer INNER JOIN Location ON Location.l_id = Trainer.t_id Inner JOIN TrainerPokemon ON TrainerPokemon.p_trainerID = Trainer.t_id WHERE t_id = '" + str(t_id) + "'")
     data = cur.fetchall()
     return data
 
 def getPokeInfo(p_id):
     con = sqlite3.connect("pokemon.db")
     cur = con.cursor()
-    cur.execute("SELECT * FROM Pokemon INNER JOIN Location ON Location.l_id = Pokemon.p_LocationID Inner JOIN Ability ON a_id = p_ability1 WHERE Pokemon.p_id = '" + str(p_id) + "'")
+    cur.execute("SELECT * FROM Pokemon INNER JOIN WildEncounter ON WildEncounter.we_pokemonID = Pokemon.p_id INNER JOIN Location ON Location.l_id = we_LocationID WHERE Pokemon.p_id = '" + str(p_id) + "'")
+    #cur.execute("SELECT * FROM Pokemon WHERE Pokemon.p_id = '" + str(p_id) + "'")
     data = cur.fetchall()
     return data
+
+def getPokemonLocation(p_id):
+    con = sqlite3.connect("pokemon.db")
+    cur = con.cursor()
+    cur.execute("SELECT Pokemon.p_name, Location.l_name FROM Pokemon INNER JOIN WildEncounter ON WildEncounter.we_pokemonID = Pokemon.p_id INNER JOIN Location ON Location.l_id = we_LocationID WHERE Pokemon.p_id = '" + str(p_id) + "'")
+    #cur.execute("SELECT * FROM Pokemon WHERE Pokemon.p_id = '" + str(p_id) + "'")
+    data = cur.fetchall()
+    return data
+
+def getBadgeCount(t_id):
+    con = sqlite3.connect("pokemon.db")
+    cur = con.cursor()
+    cur.execute("SELECT t_badge_count FROM Trainer WHERE t_id = '" + str(t_id) + "'")
+    ability = cur.fetchall()[0][0]
+    return ability
 
 def getTrainerLocation(t_id):
     con = sqlite3.connect("pokemon.db")
@@ -79,6 +95,20 @@ def getTrainerLocation(t_id):
     cur.execute("SELECT t_locationID FROM Trainer WHERE t_id = '" + str(t_id) + "'")
     location = cur.fetchall()[0][0]
     return location
+
+def getDescription(p_id):
+    con = sqlite3.connect("pokemon.db")
+    cur = con.cursor()
+    cur.execute("SELECT p_description FROM Pokemon WHERE p_id = '" + str(p_id) + "'")
+    ability = cur.fetchall()[0][0]
+    return ability
+
+def getAbility(a_id):
+    con = sqlite3.connect("pokemon.db")
+    cur = con.cursor()
+    cur.execute("SELECT a_name FROM Ability WHERE a_id = '" + str(a_id) + "'")
+    ability = cur.fetchall()[0][0]
+    return ability
 
 def getTrainers(t_name):
     con = sqlite3.connect("pokemon.db")
@@ -162,4 +192,4 @@ if __name__ == "__main__":
     #team_cnt = input()
     #addPlayer(name, team_cnt)
     #addTeam(input("enter id"))
-    print(getTrainerLocation(2))
+    print(getPokemonLocation(1))
