@@ -1,0 +1,144 @@
+1|Air Lock|Eliminates the effects of weather.|airlock.url
+2|Arena Trap|Prevents non-Flying-type opposing Pokémon from fleeing.|arenatrap.url
+3|Battle Armor|Protects the Pokémon from critical hits.|battlearmor.url
+4|Blaze|Powers up Fire-type moves when the Pokémon's HP is low.|blaze.url
+5|Cacophony|The Pokémon is immune to sound-based moves.|cacophony.url
+6|Chlorophyll|Boosts the Pokémon's Speed stat in harsh sunlight.|chlorophyll.url
+7|Clear Body|Prevents other Pokémon's moves or Abilities from lowering the Pokémon's stats.|clearbody.url
+8|Cloud Nine|Eliminates the effects of weather.|cloudnine.url
+9|Color Change|The Pokémon's type becomes the type of the move used on it.|colorchange.url
+10|Compound Eyes|Boosts the Pokémon's Accuracy stat.|compoundeyes.url
+11|Cute Charm|Contact with the Pokémon may cause infatuation.|cutecharm.url
+12|Damp|Prevents the use of Explosion and Self-Destruct.|damp.url
+13|Drizzle|Activates rain when the Pokémon enters battle.|drizzle.url
+14|Drought|Activates harsh sunlight when the Pokémon enters battle.|drought.url
+15|Early Bird|The Pokémon awakens twice as fast from sleep.|earlybird.url
+16|Effect Spore|Contact with the Pokémon may inflict poison, sleep, or paralysis on its attacker.|effectspore.url
+17|Flame Body|Contact with the Pokémon may inflict burn on the attacker.|flamebody.url
+18|Flash Fire|Powers up the Pokémon's Fire-type moves if hit by a Fire-type move.|flashfire.url
+19|Forecast|The Pokémon transforms with the weather to change its type to Water, Fire, or Ice.|forecast.url
+20|Guts|Boosts the Pokémon's Attack stat when it has a status condition.|guts.url
+21|Huge Power|Doubles the Pokémon's Attack stat.|hugepower.url
+22|Hustle|Boosts the Pokémon's Attack stat but lowers the Pokémon's Accuracy stat.|hustle.url
+23|Hyper Cutter|The Pokémon's Attack stat cannot be lowered by other Pokémon.|hypercutter.url
+24|Illuminate|Raises the likelihood of meeting wild Pokémon outside of battle.|illuminate.url
+25|Immunity|The Pokémon cannot be poisoned.|immunity.url
+26|Inner Focus|The Pokémon cannot flinch.|innerfocus.url
+27|Insomnia|The Pokémon cannot sleep.|insomnia.url
+28|Intimidate|When the Pokémon enters battle, it lowers opposing Pokémon's Attack stats.|intimidate.url
+29|Keen Eye|The Pokémon's Accuracy stat cannot be lowered by other Pokémon.|keeneye.url
+30|Levitate|The Pokémon is immune to Ground-type moves and Abilities.|levitate.url
+31|Lightning Rod|The Pokémon draws in all Electric-type moves. Instead of receiving it boosts sp atk|lightningrod.url
+32|Limber|The Pokémon cannot be paralyzed.|limber.url
+33|Liquid Ooze|HP draining moves used on the Pokémon damage instead of heal.|liquidoze.url
+34|Magma Armor|The Pokémon cannot be frozen.|magmaarmor.url
+35|Magnet Pull|Prevents Steel-type opposing Pokémon from fleeing.|magnetpull.url
+36|Marvel Scale|Boosts the Pokémon's Defense stat when it has a status condition.|marvelscale.url
+37|Minus|Boosts the Pokémon's Sp. Atk if an ally with the Plus or Minus Ability is also in battle.|minus.url
+38|Natural Cure|The Pokémon loses any status condition after switching out.|naturalcure.url
+39|Oblivious|The Pokémon cannot be infatuated or taunted.|oblivious.url
+40|Overgrow|Powers up Grass-type moves when the Pokémon's HP is low.|overgrow.url
+41|Own Tempo|The Pokémon cannot be confused.|owntempo.url
+42|Pickup|The Pokémon may pick up the item an opposing Pokémon used during a battle. The Pokémon may also pick up items outside of battle.|pickup.url
+43|Plus|Boosts the Pokémon's Sp. Atk if an ally with the Plus or Minus Ability is also in battle.|plus.url
+44|Poison Point|Contact with the Pokémon may poison the attacker.|poisonpoint.url
+45|Pressure|Raises opposing Pokémon's PP usage.|pressure.url
+46|Pure Power|Doubles the Pokémon's Attack stat.|purepower.url
+47|Rain Dish|The Pokémon gradually regains HP in rain.|raindish.url
+48|Rock Head|Protects the Pokémon from recoil damage.|rockhead.url
+49|Rough Skin|Contact with the Pokémon will damage the attacker.|roughskin.url
+50|Run Away|Enables a sure getaway from wild Pokémon.|runaway.url
+51|Sand Stream|Activates sandstorm when the Pokémon enters battle.|sandstream.url
+52|Sand Veil|Boosts the Pokémon's Evasion stat in a sandstorm.|sandveil.url
+53|Serene Grace|Boosts the likelihood of additional effects occurring when attacking.|serenegrace.url
+54|Shadow Tag|Prevents opposing Pokémon from fleeing.|shadowtag.url
+55|Shed Skin|The Pokémon may heal its status condition.|shedskin.url
+56|Shell Armor|Protects the Pokémon from critical hits.|shellarmor.url
+57|Shield Dust|Protects the Pokémon from additional effects.|shielddust.url
+58|Soundproof|The Pokémon is immune to sound-based moves.|soundproof.url
+59|Speed Boost|The Pokémon's Speed stat is boosted every turn.|speedboost.url
+60|Static|Contact with the Pokémon may paralyze the attacker.|static.url
+61|Stench|Lowers the likelihood of meeting wild Pokémon outside of battle. The Pokémon may also cause a Pokémon to flinch after attacking it.|stench.url
+62|Sticky Hold|The Pokémon's item cannot be removed.|stickyhold.url
+63|Sturdy|The Pokémon is immune to one-hit KO moves. The Pokémon cannot be knocked out with one hit while at full health either.|sturdy.url
+64|Suction Cups|The Pokémon cannot be forced to switch out or flee.|suctioncups.url
+65|Swarm|Powers up Bug-type moves when the Pokémon's HP is low.|swarm.url
+66|Swift Swim|Boosts the Pokémon's Speed stat in rain.|swiftswim.url
+67|Synchronize|The attacker will receive the same status condition if it inflicts a burn, poison, or paralysis to the Pokémon.|synchronize.url
+68|Thick Fat|The Pokémon receives half damage from Fire and Ice-type moves.|thickfat.url
+69|Trace|The Pokémon copies the Ability of the opposing Pokémon.|trace.url
+70|Torrent|Powers up Water-type moves when the Pokémon's HP is low.|torrent.url
+71|Hydration|Heals the Pokémon's status condition in the rain.|hydration.url
+72|Ice Body|Restores the Pokémon's HP in a hailstorm.|icebody.url
+73|Iron Fist|Powers up the Pokémon's punching moves.|ironfist.url
+74|Klutz|The Pokémon cannot use any held items.|klutz.url
+75|Leaf Guard|Prevents status conditions in sunny weather.|leafguard.url
+76|Magic Guard|The Pokémon only takes damage from attacks.|magicguard.url
+77|Mold Breaker|Moves can be used on the target regardless of its Abilities.|moldbreaker.url
+78|Motor Drive|Boosts its Speed stat if hit by an Electric-type, instead of taking damage.|motordrive.url
+79|Multitype|Changes the Pokémon's type to match the Plate or Z-Crystal it holds.|multitype.url
+80|No Guard|The Pokémon employs no-guard tactics to ensure incoming and outgoing attacks always land.|noguard.url
+81|Normalize|All the Pokémon's moves become Normal-type. The power of those moves is boosted a little.|normalize.url
+82|Poison Heal|Restores HP if the Pokémon is poisoned, instead of losing HP.|poisonheal.url
+83|Quick Feet|Boosts the Speed stat if the Pokémon has a status condition.|quickfeet.url
+84|Reckless|Powers up moves that have recoil damage.|reckless.url
+85|Rivalry|Becomes competitive and deals more damage to Pokémon of the same gender, but deals less to Pokémon of the opposite gender.|rivalry.url
+86|Scrappy|The Pokémon can hit Ghost-type Pokémon with Normal and Fighting-type moves.|scrappy.url
+87|Simple|The stat changes the Pokémon receives are doubled.|simple.url
+88|Skill Link|Increases the number of times multi-strike moves hit.|skilllink.url
+89|Slow Start|For five turns, the Pokémon's Attack and Speed stats are halved.|slowstart.url
+90|Sniper|Powers up moves if they become critical hits.|sniper.url
+91|Snow Cloak|Boosts evasion in a hailstorm.|snowcloak.url
+92|Snow Warning|The Pokémon summons a hailstorm when it enters a battle.|snowwarning.url
+93|Solar Power|Boosts the Sp. Atk stat in sunny weather, but HP decreases every turn.|solarpower.url
+94|Solid Rock|Reduces the power of super-effective attacks taken.|solidrock.url
+95|Stall|The Pokémon moves after all other Pokémon do.|stall.url
+96|Steadfast|The Pokémon's determination boosts the Speed stat each time the Pokémon flinches.|steadfast.url
+97|Storm Drain|Draws in all Water-type moves. Instead of being hit by Water-type moves, it boosts its Sp. Atk.|stormdrain.url
+98|Super Luck|The Pokémon is so lucky that the critical-hit ratios of its moves are boosted.|superluck.url
+99|Tangled Feet|Raises evasion if the Pokémon is confused.|tangledfeet.url
+100|Technician|Powers up the Pokémon's weaker moves.|technician.url
+101|Tinted Lens|The Pokémon can use "not very effective" moves to deal regular damage.|tintedlens.url
+102|Unaware|When attacking, the Pokémon ignores the target Pokémon's stat changes.|unaware.url
+103|Unburden|Boosts the Speed stat if the Pokémon's held item is used or lost.|unburden.url
+104|Analytic|Boosts move power when the Pokémon moves last.|analytic.url
+105|Big Pecks|Protects the Pokémon from Defense-lowering effects.|bigpecks.url
+106|Contrary|Makes stat changes have an opposite effect.|contrary.url
+107|Cursed Body|May disable a move used on the Pokémon.|cursedbody.url
+108|Defeatist|Halves the Pokémon's Attack and Sp. Atk stats when its HP becomes half or less.|defeatist.url
+109|Defiant|Boosts the Pokémon's Attack stat sharply when its stats are lowered.|defiant.url
+110|Flare Boost|Powers up special attacks when the Pokémon is burned.|flareboost.url
+111|Friend Guard|Reduces damage done to allies.|friendguard.url
+112|Harvest|May create another Berry after one is used.|harvest.url
+113|Healer|Sometimes heals an ally's status condition.|healer.url
+114|Heavy Metal|Doubles the Pokémon's weight.|heavymetal.url
+115|Illusion|Comes out disguised as the Pokémon in the party's last spot.|illusion.url
+116|Imposter|The Pokémon transforms itself into the Pokémon it's facing.|imposter.url
+117|Infiltrator|Passes through the opposing Pokémon's barrier, substitute, and the like and strikes.|infiltrator.url
+118|Iron Barbs|Inflicts damage to the attacker on contact with iron barbs.|ironbarbs.url
+119|Justified|Being hit by a Dark-type move boosts the Attack stat of the Pokémon, for justice.|justified.url
+120|Light Metal|Halves the Pokémon's weight.|lightmetal.url
+121|Magic Bounce|Reflects status moves, instead of getting hit by them.|magicbounce.url
+122|Moody|Raises one stat sharply and lowers another every turn.|moody.url
+123|Moxie|The Pokémon shows moxie, and that boosts the Attack stat after knocking out any Pokémon.|moxie.url
+124|Multiscale|Reduces the amount of damage the Pokémon takes when its HP is full.|multiscale.url
+125|Mummy|Contact with the Pokémon changes the attacker's Ability to Mummy.|mummy.url
+126|Overcoat|Protects the Pokémon from things like sand, hail, and powder.|overcoat.url
+127|Pickpocket|Steals an item from an attacker that made direct contact.|pickpocket.url
+128|Poison Touch|May poison a target when the Pokémon makes contact.|poisontouch.url
+129|Prankster|Gives priority to a status move.|prankster.url
+130|Rattled|Dark, Ghost, and Bug-type moves scare the Pokémon and boost its Speed stat.|rattled.url
+131|Regenerator|Restores a little HP when withdrawn from battle.|regenerator.url
+132|Sand Force|Boosts the power of Rock, Ground, and Steel-type moves in a sandstorm.|sandforce.url
+133|Sand Rush|Boosts the Pokémon's Speed stat in a sandstorm.|sandrush.url
+134|Sap Sipper|Boosts the Attack stat if hit by a Grass-type move, instead of taking damage.|sapsipper.url
+135|Sheer Force|Removes additional effects to increase the power of moves when attacking.|sheerforce.url
+136|Telepathy|Anticipates an ally's attack and dodges it.|telepathy.url
+137|Teravolt|Moves can be used on the target regardless of its Abilities.|teravolt.url
+138|Toxic Boost|Powers up physical attacks when the Pokémon is poisoned.|toxicboost.url
+139|Turboblaze|Moves can be used on the target regardless of its Abilities.|turboblaze.url
+140|Unnerve|Opponents cannot eat Berries.|unnerve.url
+141|Victory Star|Boosts the accuracy of the Pokémon and its allies.|victorystar.url
+142|Weak Armor|Physical attacks lower the Pokémon's Defense stat but raise its Speed stat.|weakarmor.url
+143|Wonder Skin|Makes status moves more likely to miss.|wonderskin.url
+144|Zen Mode|The Pokémon changes forme when its HP is half or less.|zenmode.url
