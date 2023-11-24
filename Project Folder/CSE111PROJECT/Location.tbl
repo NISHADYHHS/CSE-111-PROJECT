@@ -1,0 +1,79 @@
+1|Route 1|A small road by the shore, where you can enjoy the changing seasons.|route|Route1.url
+2|Route 2|A pastoral road where Trainers challenge one another.|route|Route2.url
+3|Route 3|A long winding road with lots of ponds and tall grass.|route|Route3.url
+4|Route 4|The route that was once covered in sand has a lot of buildings now.|route|Route4.url
+5|Route 5|A busy road where performers gather.|route|Route5.url
+6|Route 6|A road with many trees for nature lovers.|route|Route6.url
+7|Route 7|Raised walkways help you avoid the tall grass.|route|Route7.url
+8|Route 8|It rains a lot here, and the marshy swamp holds many Pokémon.|route|Route8.url
+9|Route 9|This paved road attracts those who love bikes.|route|Route9.url
+10|Route 10|A road leading to the Badge Check Gates, chock full of showoffs.|route|Route10.url
+11|Route 11|Limpid streams carved beautiful scenery on this road.|route|Route11.url
+12|Route 12|A place of fun, where it's enjoyable just walking over its gentle hills.|route|Route12.url
+13|Route 13|This seaside route is famous for sandbars that cross the ocean.|route|Route13.url
+14|Route 14|A road covered with mist from the waterfalls.|route|Route14.url
+15|Route 15|A road whose sharp cliffs may scare some people off.|route|Route15.url
+16|Route 16|Many who visit Nimbasa City drop by to take a break.|route|Route16.url
+17|Route 17|The fast current here makes it difficult to surf.|route|Route17.url
+18|Route 18|Some researchers believe it was once contiguous with Desert Resort.|route|Route18.url
+19|Route 19|A path formed at the foot of mountains. It has a gradual slope.|route|Route19.url
+20|Route 20|In autumn, fallen leaves accumulate and hide the ground beneath.|route|Route20.url
+21|Route 21|Many rocks make swimming difficult. Proud swimmers come to show off.|route|Route21.url
+22|Route 22|A lot of ups and downs and ledges make the route a natural maze.|route|Route22.url
+23|Route 23|A mountain path of no return with overwhelming cliffs.|route|Route23.url
+24|Abundant Shrine|People once lived in this village, and it still feels the same as it did then.|wild area|Abundant_Shrine.url
+25|Abyssal Ruins|An ancient tomb that is said to be the resting place of an ancient king.|wild area|Abyssal_Ruins.url
+26|Accumula Town|This town offers great views due to its many hills.|town|Accumula_Town.url
+27|Anville Town|A city with a rail yard where trains park for an overhaul.|town|Anville_Town.url
+28|Aspertia City|A city at the foot of high mountains where you can see all of Unova.|town|Aspertia_City.url
+29|Black City|A modern city of ongoing development that draws people to it.|town|Black_City.url
+30|Castelia City|A big city with skyscrapers piercing the clouds.|town|Castelia_City.url
+31|Castelia Sewers|Iron bars around the exits were dismantled, drawing curious Trainers.|wild area|Castelia Sewers.url
+32|Cave of Being|They say the deepest part of the cave leads to the Sinnoh region.|wild area|Cave_of_Being.url
+33|Celestial Tower|A tall tower with a large bell whose tones are said to purify the spirit.|wild area|Celestial_Tower.url
+34|Chargestone Cave|A cave where electrically charged stones float.|wild area|Chargestone_Cave.url
+35|Clay Tunnel|A tunnel created by Clay's constant mining. It leads to Twist Mountain.|wild area|clay_tunnel.url
+36|Desert Resort|It is a popular place for tourists, but too harsh to be a resort.|wild area|desert_resort.url
+37|Dragonspiral Tower|The oldest tower in the Unova region. No one knows its history.|wild area|dragonspiral_tower.url
+38|Dreamyard|A plant site used as a playground for children and Pokémon.|wild area|dreamyard.url
+39|Driftveil City|A port town distributing many goods, and a gateway to the Unova region.|town|driftveil_city.url
+40|Driftveil Drawbridge|A drawbridge raises and lowers, depending on the ship schedules.|wild area|driftveil_drawbridge.url
+41|Floccesy Ranch|Before long, the area became a ranch as Pokémon and people gathered.|wild area|floccesy_ranch.url
+42|Floccesy Town|The town is famous for a clock tower that tells of the town's beginnings.|wild area|floccesy_town.url
+43|Giant Chasm|Legend says that if you approach this big chasm, disasters surely follow.|wild area|giant_chasm.url
+44|Humilau City|A resort city where buildings float in the waves and look like islands.|town|humilau_city.url
+45|Icirrus City|In winter, the city is covered with snow as far as the eye can see.|town|icirrus_city.url
+46|Lacunosa Town|A town where all honor old customs, living as methodically as clockwork.|town|lacunosa_town.url
+47|Lentimas Town|The town boasts of porcelain and pottery made from volcanic clay.|town|lentimas_town.url
+48|Lostlorn Forest|It was once known as a place where people got lost for no reason.|wild area|lostlorn_forest.url
+49|Marine Tube|An undersea tunnel built using cutting-edge technology.|wild area|marine_tube.url
+50|Marvelous Bridge|The most advanced bridge in Unova, designed to soften any impact.|wild area|marvelous_bridge.url
+51|Mistralton Cave|A forgotten cave sealed with hints of a legend's presence.|wild area|mistralton_cave.url
+52|Mistralton City|Vegetables are grown by the runway and transported by cargo plane.|town|mistralton_city.url
+53|Moor of Icirrus|They say water collecting in hollows on the flat land created the moor.|wild area|moor_of_icirrus.url
+54|N's Castle|It once appeared in the past as a base for Team Plasma...|wild area|ns_castle.url
+55|Nacrene City|A city established in restored storehouses built 100 years ago.|town|nacrene_city.url
+56|Nature Preserve|Far from Unova|wild area|nature_preserve.url
+57|Nimbasa City|A bustling city of entertainment, with many theme parks.|town|nimbasa_city.url
+58|Nuvema Town|A rural town whose sea breezes give the sense of something coming.|town|nuvema_town.url
+59|Opelucid City|A convenient city of rapid change, showing no traces of the past.|town|opelucid_city.url
+60|P2 Laboratory|Team Plasma's secret lab is located on a quiet little island.|evil base|p2_laboratory.url
+61|Pinwheel Forest|You can go through hollows of fallen trees, too.|wild area|pinwheel_forest.url
+62|Plasma Frigate|A mysterious black vessel seen in various locations in Unova.|evil base|plasma_frigate.url
+63|Relic Castle|Ancient ruins with a glorious history, buried in the sand as time went by.|wild area|relic_castle.url
+64|Relic Passage|A recently discovered passage that leads to the Relic Castle.|wild area|relic_passage.url
+65|Reversal Mountain|A volcano that grabs headlines for its many recent eruptions.|wild area|reversal_mountain.url
+66|Seaside Cave|A rock that became passable due to wind, waves, and Pokémon.|wild area|seaside_cave.url
+67|Strange House|A house known for a sad incident that is said to keep people away.|wild area|strange_house.url
+68|Striaton City|Entry stairs built in memory of a former home in a snowier climate.|town|striaton_city.url
+69|Tubeline Bridge|A sturdy steel bridge that won't budge an inch when trains cross it.|wild area|tubeline_bridge.url
+70|Twist Mountain|It has a reputation as a mine littered with valuable ore.|wild area|twist_mountain.url
+71|Undella Bay|A world-famous sea of shining waves.|wild area|undella_bay.url
+72|Undella Town|A summer retreat with a beach full of people who enjoy summer vacations.|town|undella_town.url
+73|Underground Ruins|regis|wild area|underground_ruins.url
+74|Victory Road|These forking paths are the last obstacle before the Pokémon League!|wild area|victory_road.url
+75|Village Bridge|An old bridge that settlers of the Unova region built and now live on.|wild area|village_bridge.url
+76|Virbank City|A city often covered by clouds and smoke, with very active residents.|town|virbank_city.url
+77|Virbank Complex|A complex that is designed so Pokémon can work there easily.|wild area|virbank_complex.url
+78|Wellspring Cave|The underwater pool grew from rainwater soaking into the ground.|wild area|wellspring_cave.url
+79|White Forest|A place of nature's bounty, it attracts people who long for nature.|wild area|white_forest.url
