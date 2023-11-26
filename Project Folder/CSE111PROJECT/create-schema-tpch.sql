@@ -45,51 +45,22 @@ CREATE TABLE IF NOT EXISTS TrainerLocation(
 );
 
 CREATE TABLE IF NOT EXISTS WildEncounter(
-    we_locationID INT,
-    we_pokemonID INT,
-    we_encounterChance DECIMAL(5, 2)
+    we_pokemonName VARCHAR(20),
+    we_area VARCHAR(50),
+    we_level VARCHAR(50),
+    we_encounterChance INT,
+    we_locationID INT
 );
 
 CREATE TABLE IF NOT EXISTS Resistance(
-   r_id INT PRIMARY KEY,
-   r_fire INT,
-   r_water INT,
-   r_grass INT,
-   r_electric INT,
-   r_ice INT,
-   r_normal INT,
-   r_fighting INT,
-   r_poison INT,
-   r_ground INT,
-   r_flying INT,
-   r_bug INT,
-   r_rock INT,
-   r_ghost INT,
-   r_steel INT,
-   r_psychic INT,
-   r_dragon INT,
-   r_dark INT
+   r_id INT,
+   r_resistane INT,
+   r_immune
 );
 
 CREATE TABLE IF NOT EXISTS Weakness (
-    w_id INT PRIMARY KEY,
-    w_normal INT,
-    w_fire INT,
-    w_water INT,
-    w_grass INT,
-    w_electric INT,
-    w_ice INT,
-    w_fighting INT,
-    w_poison INT,
-    w_ground INT,
-    w_flying INT,
-    w_psychic INT,
-    w_bug INT,
-    w_rock INT,
-    w_ghost INT,
-    w_steel INT,
-    w_dragon INT,
-    w_dark INT
+    w_id INT,
+    w_weakness INT
 );
 
 CREATE TABLE IF NOT EXISTS Type (
@@ -102,10 +73,9 @@ CREATE TABLE IF NOT EXISTS Type (
 CREATE TABLE IF NOT EXISTS Item (
     i_id INT PRIMARY KEY,
     i_name VARCHAR(50) NOT NULL,
-    i_description TEXT,
-    i_category VARCHAR(20) NOT NULL,
-    i_effect TEXT,
-    i_image_url VARCHAR(255)
+    i_description VARCHAR(255) NOT NULL,
+    i_image_url VARCHAR(255) NOT NULL,
+    i_category VARCHAR(20) NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS Moves (
@@ -114,11 +84,8 @@ CREATE TABLE IF NOT EXISTS Moves (
     m_type INT NOT NULL,
     m_category VARCHAR(20) NOT NULL,
     m_power INT NOT NULL,
-    m_accuracy INT NOT NULL,
     m_pp INT NOT NULL,
-    m_description TEXT,
-    m_effect VARCHAR(255),
-    m_image_url VARCHAR(255)
+    m_accuracy VARCHAR(20) NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS MoveTable(
@@ -137,7 +104,7 @@ CREATE TABLE IF NOT EXISTS Trainer (
     t_image_url VARCHAR(255)
 );
 
-CREATE TABLE IF NOT EXISTS Locations (
+CREATE TABLE IF NOT EXISTS Location (
     l_id INT PRIMARY KEY,
     l_name VARCHAR(50) NOT NULL,
     l_description TEXT,
@@ -148,11 +115,9 @@ CREATE TABLE IF NOT EXISTS Locations (
 
 CREATE TABLE IF NOT EXISTS Ability (
     a_id INT PRIMARY KEY,
-    a_name VARCHAR(50) NOT NULL,
-    a_description TEXT,
-    a_effect VARCHAR(255),
-    a_hidden BOOLEAN,
-    a_image_url VARCHAR(255)
+    a_name VARCHAR(20) NOT NULL,
+    a_description VARCHAR(255) NOT NULL,
+    a_image_url VARCHAR(255) NOT NULL
 );
 
 
