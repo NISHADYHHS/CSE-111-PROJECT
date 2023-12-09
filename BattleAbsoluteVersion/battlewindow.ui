@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BattleWindow</class>
+ <widget class="QMainWindow" name="BattleWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1310</width>
+    <height>896</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="enemyHP">
+    <property name="geometry">
+     <rect>
+      <x>1200</x>
+      <y>130</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="enemyPokemon">
+    <property name="geometry">
+     <rect>
+      <x>1200</x>
+      <y>110</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>589</x>
+      <y>609</y>
+      <width>281</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>740</y>
+      <width>281</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>740</y>
+      <width>281</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BAG</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_13">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>540</y>
+      <width>201</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_9">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>540</y>
+      <width>201</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_12">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>670</y>
+      <width>201</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="playerHP">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>120</y>
+      <width>63</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_14">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>670</y>
+      <width>201</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_10">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>670</y>
+      <width>201</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>610</y>
+      <width>281</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="battleText">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>450</y>
+      <width>1415</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>740</y>
+      <width>281</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RUN</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_11">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>540</y>
+      <width>201</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="playerPokemon">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>90</y>
+      <width>63</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>610</y>
+      <width>281</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>POKEMON</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>610</y>
+      <width>281</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>FIGHT</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_8">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>740</y>
+      <width>281</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_15">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>670</y>
+      <width>201</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_16">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>670</y>
+      <width>201</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_17">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>670</y>
+      <width>201</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_18">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>540</y>
+      <width>201</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_19">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>540</y>
+      <width>201</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_20">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>540</y>
+      <width>201</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="playerPic">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>290</y>
+      <width>461</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="enemyPic">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>0</y>
+      <width>271</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="miwidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>0</y>
+      <width>731</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <widget class="QProgressBar" name="pokemonhpbar">
+     <property name="geometry">
+      <rect>
+       <x>27</x>
+       <y>150</y>
+       <width>121</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>24</number>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTextEdit" name="moveLog">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>590</y>
+      <width>351</width>
+      <height>251</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="AttackAnimation" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>19</y>
+      <width>1071</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <widget class="AttackAnimation" name="widget_4" native="true">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>0</y>
+       <width>361</width>
+       <height>191</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="PhysicalAnimation" name="widget_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>229</x>
+      <y>19</y>
+      <width>1071</width>
+      <height>521</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="AttackAnimationE" name="widget_5" native="true">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>19</y>
+      <width>1071</width>
+      <height>521</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="AttackAnimation" name="widget_6" native="true">
+    <property name="geometry">
+     <rect>
+      <x>960</x>
+      <y>19</y>
+      <width>271</width>
+      <height>231</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="enemyhpbar">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>172</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QWidget" name="potionPage" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>9</y>
+      <width>1311</width>
+      <height>831</height>
+     </rect>
+    </property>
+    <widget class="QPushButton" name="pushButton_21">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>368</y>
+       <width>311</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Back</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_22">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>318</y>
+       <width>311</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Use Potion</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QProgressBar" name="pokemonhpbar_2">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>152</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="AttackAnimation" name="background" native="true">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>-1</y>
+      <width>1301</width>
+      <height>541</height>
+     </rect>
+    </property>
+   </widget>
+   <zorder>background</zorder>
+   <zorder>pushButton_8</zorder>
+   <zorder>widget</zorder>
+   <zorder>widget_5</zorder>
+   <zorder>widget_3</zorder>
+   <zorder>widget_2</zorder>
+   <zorder>widget_6</zorder>
+   <zorder>pushButton_7</zorder>
+   <zorder>pushButton_6</zorder>
+   <zorder>pushButton_2</zorder>
+   <zorder>pushButton_13</zorder>
+   <zorder>pushButton_9</zorder>
+   <zorder>pushButton_12</zorder>
+   <zorder>playerHP</zorder>
+   <zorder>pushButton_14</zorder>
+   <zorder>pushButton_10</zorder>
+   <zorder>pushButton_5</zorder>
+   <zorder>battleText</zorder>
+   <zorder>pushButton_4</zorder>
+   <zorder>pushButton_11</zorder>
+   <zorder>playerPokemon</zorder>
+   <zorder>pushButton_3</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>pushButton_15</zorder>
+   <zorder>pushButton_16</zorder>
+   <zorder>pushButton_17</zorder>
+   <zorder>pushButton_18</zorder>
+   <zorder>pushButton_19</zorder>
+   <zorder>pushButton_20</zorder>
+   <zorder>playerPic</zorder>
+   <zorder>moveLog</zorder>
+   <zorder>enemyHP</zorder>
+   <zorder>enemyPic</zorder>
+   <zorder>enemyPokemon</zorder>
+   <zorder>enemyhpbar</zorder>
+   <zorder>potionPage</zorder>
+   <zorder>pokemonhpbar_2</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1310</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>miwidget</class>
+   <extends>QWidget</extends>
+   <header location="global">miwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>AttackAnimation</class>
+   <extends>QWidget</extends>
+   <header>attackanimation.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>AttackAnimationE</class>
+   <extends>QWidget</extends>
+   <header>attackanimatione.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PhysicalAnimation</class>
+   <extends>QWidget</extends>
+   <header>physicalanimation.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
