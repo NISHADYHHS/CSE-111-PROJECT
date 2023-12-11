@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <form action="{% url 'home' %}" method="get">
+    <button type="submit">Back to Main Menu</button>
+  </form>
+  <meta charset="UTF-8">
+  <title>Trainer Page</title>
+  <style>
+    /* Some basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+    }
+    .trainer-card {
+      display: none; /* Hide all Trainer cards initially */
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 400px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    /* Add other styling as needed */
+  </style>
+</head>
+<body>
+
+<select id="trainerSelector" onchange="showTrainerCard()">
+  <option value="none">Select a Trainer</option>
+  <!-- Dynamically generate options based on database -->
+  {% for trainer in trainerz %}
+    <option value="{{ trainer.trainer_id }}">{{ trainer.trainer_name }}</option>
+  {% endfor %}
+</select>
+
+<!-- Dynamically generate Trainer cards based on database -->
+{% for trainer in trainerz %}
+  <div class="trainer-card" id="trainerCard{{ trainer.trainer_id }}">
+    <h1>{{ trainer.trainer_name }}</h1>
+    <!-- Add other trainer details here based on your database structure -->
+    {% for tp in trainer.pokemon_list %}
+      <div class="pokemon-info">
+        <img class="pokemon-image" src="https://raw.githubusercontent.com/PokeAPI/sprites/ceff190a63a58c266a2d8bc10525f56a83ff3992/sprites/pokemon/other/showdown/{{ tp }}.gif">
+        <a href="{% url 'edit_pokemon' pokemon_id=tp trainer_id=trainer.trainer_id %}">{{ tp }}</a>
+      </div>
+    {% endfor %}
+    <form action="{% url 'edit_team' %}" method="get">
+      <input type="hidden" name="trainer_id" value="{{ trainer.trainer_id }}">
+      <button type="submit">Add Pokemon to Team</button>
+    </form>
+  </div>
+{% endfor %}
+
+<script>
+  function showTrainerCard() {
+    const selector = document.getElementById("trainerSelector");
+    const selectedTrainerId = selector.value;
+
+    // Hide all Trainer cards
+    const allCards = document.querySelectorAll(".trainer-card");
+    allCards.forEach(card => {
+      card.style.display = "none";
+    });
+
+    // Show the selected Trainer card
+    if (selectedTrainerId !== "none") {
+      const selectedCard = document.getElementById(`trainerCard${selectedTrainerId}`);
+      if (selectedCard) {
+        selectedCard.style.display = "block";
+      }
+    }
+  }
+</script>
+
+<form action="{% url 'create_new_team' %}" method="get">
+  <button type="submit">Create New Team</button>
+</form>
+
+</body>
+</html>

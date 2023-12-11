@@ -1,0 +1,291 @@
+<!-- create_new_team.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <form action="{% url 'home' %}" method="get">
+        <button type="submit">Back to Main Menu</button>
+    </form>
+    <meta charset="UTF-8">
+    <title>Create New Team</title>
+    <style>
+        /* Some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .add-pokemon-section {
+            margin-bottom: 20px;
+        }
+        .pokemon-card {
+            display: none;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        h2 {
+            text-align: center;
+        }
+        .pokemon-image {
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <p id="statusMessage"></p>
+
+<h1>Create New Team</h1>
+<div>
+    <label for="trainerIdTextBox">Trainer ID:</label>
+    <input type="text" id="trainerIdTextBox" value="{{ trainerid }}" readonly>
+</div>
+{% for i in "123456" %}
+    <div class="add-pokemon-section">
+        <select id="pokemonSelector{{ i }}" onchange="showPokemonCard('{{ i }}'); ">
+            <option value="none">Select a Pokémon</option>
+            <!-- Dynamically generate options based on database -->
+            {% for p in pokemon %}
+                <option value="{{ p.p_id }}">{{ p.p_name }}</option>
+            {% endfor %}
+        </select>
+        
+    </div>
+       
+        
+        <!-- Display Pokemon card dynamically -->
+        <div class="pokemon-card" id="pokemonCard{{ i }}">
+            <h2>Pokemon Details</h2>
+            <img class="pokemon-image" src="" alt="">
+            <p>Name: <span id="pokemonName{{ i }}"></span></p>
+            <p>ID: <span id="pokemonID{{ i }}"></span></p>
+
+            <div class="input-group">
+                <label for="levelSelect{{ i }}">Level:</label>
+                <select id="levelSelect{{ i }}" class="stat-input" onchange="updateTextBox('levelSelect{{ i }}', 'levelTextBox{{ i }}')">
+                    {% for value in levels %}
+                        {% if value < 100 %}
+                            <option value="{{ value }}" {% if value == its.i_id %}selected{% endif %}>{{ value }}</option>
+                        {% endif %}
+                    {% endfor %}
+                </select>
+                <input type="text" id="levelTextBox{{ i }}" class="stat-input" readonly>
+            </div>
+
+            <div class="input-group">
+                <label for="itemSelect{{ i }}">Item:</label>
+                <select id="itemSelect{{ i }}" class="stat-input" onchange="updateTextBox('itemSelect{{ i }}', 'itemTextBox{{ i }}')">
+                    {% for value in items %}
+                        <option value="{{ value }}" {% if value == pokemon.p_item %}selected{% endif %}>{{ value }}</option>
+                    {% endfor %}
+                </select>
+                <input type="text" id="itemTextBox{{ i }}" class="stat-input" readonly onfocus="this.blur();">
+            </div>
+
+            <div class="input-group">
+                <label for="Move1{{ i }}">Move 1:</label>
+                <select id="Move1{{ i }}" class="stat-input" onchange="updateTextBox('Move1{{ i }}', 'Move1TextBox{{ i }}')">
+                    {% for ms in moves %}
+                        <option value="{{ value }}" {% if value == ms.m_name %}selected{% endif %}>{{ ms.m_name }}</option>
+                    {% endfor %}
+                </select>
+                <input type="text" id="Move1TextBox{{ i }}" class="stat-input" readonly>
+            </div>
+
+            <div class="input-group">
+                <label for="Move2{{ i }}">Move 2:</label>
+                <select id="Move2{{ i }}" class="stat-input" onchange="updateTextBox('Move2{{ i }}', 'Move2TextBox{{ i }}')">
+                    {% for ms in moves %}
+                        <option value="{{ value }}" {% if value == pokemon.p_move2ID %}selected{% endif %}>{{  ms.m_name }}</option>
+                    {% endfor %}
+                </select>
+                <input type="text" id="Move2TextBox{{ i }}" class="stat-input" readonly>
+            </div>
+
+            <div class="input-group">
+                <label for="Move3{{ i }}">Move 3:</label>
+                <select id="Move3{{ i }}" class="stat-input" onchange="updateTextBox('Move3{{ i }}', 'Move3TextBox{{ i }}')">
+                    {% for ms in moves %}
+                        <option value="{{ value }}" {% if value == pokemon.p_move3ID %}selected{% endif %}>{{  ms.m_name }}</option>
+                    {% endfor %}
+                </select>
+                <input type="text" id="Move3TextBox{{ i }}" class="stat-input" readonly>
+            </div>
+
+            <div class="input-group">
+                <label for="Move4{{ i }}">Move 4:</label>
+                <select id="Move4{{ i }}" class="stat-input" onchange="updateTextBox('Move4{{ i }}', 'Move4TextBox{{ i }}')">
+                    {% for ms in moves %}
+                        <option value="{{ value }}" {% if value == pokemon.p_move4ID %}selected{% endif %}>{{  ms.m_name }}</option>
+                    {% endfor %}
+                </select>
+                <input type="text" id="Move4TextBox{{ i }}" class="stat-input" readonly>
+            </div>
+
+            
+            <!-- Add other Pokemon details here -->
+            <button onclick="savePokemon('{{ i }}')">Save</button>
+        </div>
+        
+    </div>
+{% endfor %}
+
+
+<!-- ... Your HTML ... -->
+
+<script>
+        function savePokemon(section) {
+    // Get the selected Pokemon ID from the dropdown
+    const selector = document.getElementById(`pokemonSelector${section}`);
+    const sm1 = document.getElementById(`Move1${section}`);
+    const sm2 = document.getElementById(`Move2${section}`);
+    const sm3 = document.getElementById(`Move3${section}`);
+    const sm4 = document.getElementById(`Move4${section}`);
+    const lev = document.getElementById(`levelSelect${section}`);
+    const tr = document.getElementById(`trainerIdTextBox`);
+    const it = document.getElementById(`itemSelect${section}`);
+    const selectedPokemonId = selector.value;
+    const selectMove1 = sm1.value;
+    const selectMove2 = sm2.value;
+    const selectMove3 = sm3.value;
+    const selectMove4 = sm4.value;
+    const selectedLevel = lev.value;
+    const trainerId = tr.value;
+    const selectedItem = it.value;
+
+    // Check if a Pokemon is selected
+    if (selectedPokemonId !== "none") {
+        // Call the Python script to add the trainer's Pokemon
+        const xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    const response = JSON.parse(xhr.responseText);
+                    console.log(response.message);
+                    // Reset the dropdown to "Select a Pokémon"
+                    selector.value = "none";
+                    // Hide the corresponding Pokemon card
+                    const selectedCard = document.getElementById(`pokemonCard${section}`);
+                    if (selectedCard) {
+                        selectedCard.style.display = "none";
+                    }
+                    // Update the page or perform other actions based on the result
+                    // For example, you can update a status message on the page
+                    const statusElement = document.getElementById('statusMessage');
+                    if (statusElement) {
+                        statusElement.innerText = response.message;
+                    }
+                } else {
+                    console.error('Error:', xhr.status);
+                }
+            }
+        };
+       // const url = `/addTrainerPokemon/${selectedPokemonId}/?selectMove1=${selectMove1}&selectMove2=${selectMove2}&selectMove3=${selectMove3}&selectMove4=${selectMove4}`;
+        xhr.open('GET', `/addTrainerPokemon/${selectedPokemonId}/${selectMove1}/${selectMove2}/${selectMove3}/${selectMove4}/${selectedLevel}/${trainerId}/${selectedItem}/`, true);
+        xhr.send();
+    }
+}
+</script>
+
+<script>
+    function showPokemonCard(section) {
+        const selector = document.getElementById(`pokemonSelector${section}`);
+        const selectedPokemonId = selector.value;
+
+        // Hide all Pokemon cards
+        const allCards = document.querySelectorAll(".pokemon-card");
+        allCards.forEach(card => {
+            card.style.display = "none";
+        });
+
+        // Show the selected Pokemon card
+        if (selectedPokemonId !== "none") {
+            const selectedCard = document.getElementById(`pokemonCard${section}`);
+            if (selectedCard) {
+                selectedCard.style.display = "block";
+                // Fetch Pokemon details via AJAX and update the card content here
+                // For simplicity, the image source is left empty in this example
+                // Update the 'src' attribute with the correct URL based on your data
+                const pokemonNameElement = document.getElementById(`pokemonName${section}`);
+                const pokemonIDElement = document.getElementById(`pokemonID${section}`);
+                pokemonNameElement.innerText = `Name: ${selector.options[selector.selectedIndex].text}`;
+                pokemonIDElement.innerText = `ID: ${selectedPokemonId}`;
+                selectedCard.querySelector(".pokemon-image").src = `https://raw.githubusercontent.com/PokeAPI/sprites/ceff190a63a58c266a2d8bc10525f56a83ff3992/sprites/pokemon/other/showdown/${selectedPokemonId}.gif`;
+                activatePythonScript(selectedPokemonId, section);
+            }
+        }
+    }
+
+    function activatePythonScript(selectedPokemonId, section) {
+        const xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    const response = JSON.parse(xhr.responseText);
+                    console.log(response.message);
+                    console.log(response.result);
+                    // Update the Move dropdown menus with the obtained result
+                    updateMoveDropdowns(response.result, section);
+                    // Update the page or perform other actions based on the result
+                    // For example, you can update a status message on the page
+                    const statusElement = document.getElementById('statusMessage');
+                    if (statusElement) {
+                        statusElement.innerText = response.message;
+                    }
+                } else {
+                    console.error('Error:', xhr.status);
+                }
+            }
+        };
+        xhr.open('GET', `/activate_moves/${selectedPokemonId}/`, true);
+        xhr.send();
+    }
+
+    function updateMoveDropdowns(moves, section) {
+        updateMoveDropdown(moves, `Move1${section}`);
+        updateMoveDropdown(moves, `Move2${section}`);
+        updateMoveDropdown(moves, `Move3${section}`);
+        updateMoveDropdown(moves, `Move4${section}`);
+    }
+
+
+
+
+    function updateMoveDropdown(moves, selectId) {
+        const selectElement = document.getElementById(selectId);
+        // Clear existing options
+        selectElement.innerHTML = '';
+        moves.forEach(move => {
+            const optionElement = document.createElement('option');
+            optionElement.value = move;
+            optionElement.textContent = move;
+            selectElement.appendChild(optionElement);
+        });
+    }
+</script>
+
+<script>
+    // Function to update the text box with the selected value from the dropdown
+    function updateTextBox(selectId, textBoxId) {
+        const selectElement = document.getElementById(selectId);
+        const textBoxElement = document.getElementById(textBoxId);
+
+        if (selectElement && textBoxElement) {
+            textBoxElement.value = selectElement.value;
+        }
+    }
+</script>
+
+<!-- ... Your HTML ... -->
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!-- pokemon_card.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <form action="{% url 'home' %}" method="get">
+    <button type="submit">Back to Main Menu</button>
+  </form>
+  <meta charset="UTF-8">
+  <title>{{ pokemon.p_name }} Card</title>
+  <style>
+    /* Some basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+    }
+    .pokemon-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 400px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .pokemon-image {
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+      height: 200px;
+    }
+    .stat-input {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="pokemon-card">
+  <h1>{{ pokemon.p_name }}</h1>
+  <img class="pokemon-image" src="https://raw.githubusercontent.com/PokeAPI/sprites/ceff190a63a58c266a2d8bc10525f56a83ff3992/sprites/pokemon/other/showdown/{{ pokemon.p_id }}.gif" alt="{{ pokemon.p_name }}">
+
+  <!-- Dropdown menus and text boxes for each stat -->
+  <form id="statForm">
+    <!-- Example for HP -->
+    <label for="hpSelect">HP:</label>
+    <select id="hpSelect" class="stat-input" onchange="updateTextBox('hpSelect', 'hpTextBox')">
+      {% for value in pokemon.r %}
+        <option value="{{ value }}" {% if value == pokemon.p_hp %}selected{% endif %}>{{ value }}</option>
+      {% endfor %}
+    </select>
+    <input type="text" id="hpTextBox" class="stat-input" readonly>
+    
+    <label for="attackSelect">Attack:</label>
+    <select id="attackSelect" class="stat-input" onchange="updateTextBox('attackSelect', 'attackTextBox')">
+    {% for value in pokemon.r %}
+        <option value="{{ value }}" {% if value == pokemon.p_attack %}selected{% endif %}>{{ value }}</option>
+    {% endfor %}
+    </select>
+    <input type="text" id="attackTextBox" class="stat-input" readonly>
+  </form>
+
+  <p>Additional Information:</p>
+  <ul>
+    <!-- Remaining content remains unchanged -->
+  </ul>
+</div>
+
+<script>
+  // Function to update the text box with the selected value from the dropdown
+  function updateTextBox(selectId, textBoxId) {
+    const selectElement = document.getElementById(selectId);
+    const textBoxElement = document.getElementById(textBoxId);
+
+    if (selectElement && textBoxElement) {
+      textBoxElement.value = selectElement.value;
+    }
+  }
+</script>
+
+</body>
+</html>
